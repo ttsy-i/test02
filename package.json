@@ -1,0 +1,21 @@
+{
+  "name": "test02",
+  "version": "1.0.0",
+  "description": "test02",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@cybozu/eslint-config": "^25.0.0",
+    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
+    "mocha": "^11.7.5",
+    "prettier": "^3.7.4"
+  },
+  "type": "module"
+}
