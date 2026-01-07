@@ -1,5 +1,5 @@
-const assert = require("assert");
-const fizzbuzz = require("../index");
+import assert from "assert";
+import fizzbuzz from "../index.js";
 
 describe("fizzbuzz", () => {
   it("return Fizzbuzz when value is divisible by 15", () => {

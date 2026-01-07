@@ -1,4 +1,4 @@
-module.exports = function fizzbuzz(value) {
+export default function fizzbuzz(value) {
   if (value % 15 === 0) {
     return "Fizzbuzz";
   }
@@ -9,4 +9,4 @@ module.exports = function fizzbuzz(value) {
     return "Buzz";
   }
   return String(value);
-};
+}
