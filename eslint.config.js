@@ -30,12 +30,12 @@ export default [
   ...compat.extends("@cybozu/eslint-config/presets/node-prettier"),
 
   /**
-   * 通常の Node (CommonJS) コード
+   * 通常の Node (ES Module) コード
    */
   {
     files: ["**/*.js"],
     languageOptions: {
-      sourceType: "commonjs",
+      sourceType: "module",
       globals: {
         ...globals.node,
       },
@@ -43,12 +43,12 @@ export default [
   },
 
   /**
-   * test ファイル（mocha + CommonJS）
+   * test ファイル（mocha + ES Module）
    */
   {
     files: ["test/**/*.js"],
     languageOptions: {
-      sourceType: "commonjs",
+      sourceType: "module",
       globals: {
         ...globals.node,
         ...globals.mocha,
